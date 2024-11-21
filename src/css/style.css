@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body{
+    font-family: 'Quicksand';
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px;
+}
+
+.logo1 {
+    display: flex;
+    align-items: center;
+}
+
+.logo1 h1{
+    font-size: 20px;
+    margin-left: 6px;
+}
+.logo1 h1:hover{
+    background-color: #1d3f3a;
+    color: aliceblue;
+    border-radius: 10px;
+    padding: 10px 5px;
+    transition: 0.3s ease-in-out;
+    margin-left: 20px;
+}
+.logo1 img{
+    border-radius: 50%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+.menu a li{
+    padding: 10px 5px;
+    transition: 0.3s ease-in-out;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+.menu a li:hover { 
+    background-color: #1d3f3a;
+    color: aliceblue;
+}
