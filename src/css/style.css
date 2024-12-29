@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
-body{
+body {
     font-family: 'Quicksand';
 }
 
-.cabecalho{
+.cabecalho {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 45px;
+
 }
 
 .logo1 {
@@ -17,11 +18,12 @@ body{
     align-items: center;
 }
 
-.logo1 h1{
+.logo1 h1 {
     font-size: 20px;
     margin-left: 6px;
 }
-.logo1 h1:hover{
+
+.logo1 h1:hover {
     background-color: #1d3f3a;
     color: aliceblue;
     border-radius: 10px;
@@ -29,22 +31,94 @@ body{
     transition: 0.3s ease-in-out;
     margin-left: 20px;
 }
-.logo1 img{
+
+.logo1 img {
     border-radius: 50%;
 }
 
-.menu {
+.menu ul{
     display: flex;
     align-items: center;
-    margin-left: 100px;
 }
-.menu a li{
+
+.menu a li {
     padding: 10px 5px;
     transition: 0.3s ease-in-out;
     margin-left: 20px;
     border-radius: 10px;
 }
-.menu a li:hover { 
+
+/* menu mobile from here */
+
+
+.menu-mobile {
+    background-color:  #1d3f3a;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .3s;
+}
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.menu-mobile nav ul {
+    text-align: right;
+}
+
+.menu-mobile nav ul a li {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 15%;
+    display: block;
+}
+
+.menu-mobile nav ul a li:hover {
     background-color: #1d3f3a;
     color: aliceblue;
+}
+
+.menu-mobile .btn-fechar img {
+    background-color: aliceblue;
+    border-radius: 15%;
+}
+
+.menu-mobile .btn-fechar {
+    padding: 20px 4%;
+}
+
+/*menu mobile ends here */
+
+.menu a li:hover {
+    background-color: #1d3f3a;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px;
+    align-items: center;
+}
+
+.rigth-side .button1 {
+    font-size: 60px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.rigth-side .button1:hover {
+    background-color: #1d3f3a;
+    color: aliceblue;
+    transition: 0.3s ease-in-out;
+}
+
+.left-side img {
+    border-radius: 30%;
+    box-shadow: #c6c8c8 5px 10px;
 }
